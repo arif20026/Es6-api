@@ -49,7 +49,7 @@ const displayVideos = videos => {
             </div>
             <div>
             <h2 class="card-title text-base font-bold text-black ">${video.title}</h2>
-            <p class="text-sm font-normal text-[#171717b3]">${video.authors[0].profile_name} <span>${video.authors[0].verified}
+            <p class="text-sm font-normal text-[#171717b3]">${video.authors[0].profile_name}  </p>
             <h6 class="text-sm font-normal text-[#171717b3]">${video.others.views} views</h6>
             </div>
               
