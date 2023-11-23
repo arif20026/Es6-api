@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+
+    <section class="mx-8" >
+        <div id="blogContent" >
+            <h3>Q: Discuss the scope of var, let, and const</h3>
+            <p><b>var:</b>
+
+                <ul>
+                    <li>Function-scoped or globally scoped.</li>
+                    <li>Hoisted to the top of their scope.</li>
+                    <li>Can be reassigned and redeclared. </li>
+                </ul>
+                
+                <br>
+
+                <b>let:</b>
+
+                <ul>
+                    <li>Block-scoped.</li>
+                    <li>Hoisted to the top of their scope but not initialized until the declaration is encountered.</li>
+                    <li>Can be reassigned but not redeclared.</li>
+                </ul>
+
+               
+
+                <b>const:</b>
+
+                 <ul>
+                    <li>Block-scoped.</li>
+                    <li>Hoisted to the top of their scope but not initialized until the declaration is encountered.</li>
+                    <li>Cannot be reassigned or redeclared. The value assigned during declaration is constant.</li>
+                 </ul>
+
+               
+
+
+                Use const by default and only use let when you need to reassign a variable. Avoid using var in
+                modern JavaScript.
+
+            </p>
+
+
+
+            <h3>Q: Tell us the use cases of null and undefined</h3>
+            <p> <b>Undefined:</b> Represents the absence of a value or an uninitialized variable.
+                Automatically assigned to variables that are declared but not assigned a value.
+                Commonly used to check if a variable has been defined or initialized. <br>
+
+                <b>null:</b>Represents the intentional absence of any object value.
+                Typically set explicitly by the developer to signify the absence of a meaningful value.
+                Often used in situations where an object or value is expected, but none is applicable or available.
+            </p>
+            <h3>Q: What do you mean by REST API?</h3>
+            <p>
+                REST API stands for Representational State Transfer Application Programming Interface. It is an
+                architectural style for designing networked applications. REST is not a specific technology, but
+                rather a set of principles and constraints for building web services.
+            </p>
+        </div>
+    </section>
+
+    
+</body>
+</html>

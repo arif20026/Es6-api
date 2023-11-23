@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero-tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
+
+    <style>
+        .body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+    <script>
+        function questionAnswer() {
+
+            const newPageUrl = 'http://127.0.0.1:5500/blog.html';
+
+
+            window.location.href = newPageUrl;
+        }
+
+        // const sortVideos = async () => {
+        //     const res = await fetch(`https://openapi.programming-hero.com/api/videos/category/1000`)
+        //     const data = await res.json()
+        //     const sortedVideos = data.data
+        //     const emptyArray = []
+        //     for (let i = 0; i < sortedVideos.length; i++) {
+        //         emptyArray.push(parseFloat(sortedVideos[i].others.views))
+
+        //         // console.log(parseFloat(sortedVideos[i].others.views) );
+        //     }
+
+        //     let sortedArray = emptyArray.sort((a, b) => b - a)
+        //     console.log(sortedArray)
+        //     for (let i = 0; i < sortedArray.length; i++) {
+        //         const searchValue = sortedArray[i];
+
+        //         const index = sortedArray.findIndex(obj => obj.views=== (searchValue +'K'));
+
+        //         console.log(obj)
+
+        //         if (index !== -1) {
+        //             console.log('Index of the object:', index);
+        //         } else {
+        //             console.log('Object not found in the array');
+        //         }
+               
+        //     }
+        // }
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav
+            class=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-center lg:flex lg:justify-between items-center my-12 mx-14">
+            <img src="Images/Logo.png" alt="">
+            <button class="btn bg-gray-300 mx-8  my-4 px-5 py-3 rounded hover:bg-[#FF1F3D] text-lg font-medium "
+                onclick="sortVideos()">Sort By
+                View</button>
+
+            <button id="blog-button"
+                class="btn bg-[#FF1F3D] mx-8 px-5 py-3 rounded hover:bg-gray-300 hover:text-black  text-lg font-medium text-white"
+                onclick="questionAnswer()">Blog</button>
+
+        </nav>
+        <!-- <img src="Images/Icon.png" alt=""> -->
+
+
+
+        <hr class="mx-14">
+
+    </header>
+
+    <main>
+
+        <!-- category section -->
+
+        <section class="flex justify-center my-8" id="category-button-container">
+
+            <!-- <button class="btn btn-active" id="category-button">All</button> -->
+
+        </section>
+
+        <section>
+
+            <div id="video-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-12 ">
+
+                <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div>
+                    
+                  </div>
+
+            </div>
+
+            <div id="no-video-container" class="">
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!-- blog section -->
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
